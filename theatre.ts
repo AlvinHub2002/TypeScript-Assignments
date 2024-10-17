@@ -1,4 +1,4 @@
-class Theatre {
+class Theatr {
     theatreName: string;
     seats: boolean[];
 
@@ -45,15 +45,15 @@ class Theatre {
 }
 
 
-const myTheatre = new Theatre("Grand Cinema", 10);
-console.log(myTheatre.availableSeats()); 
+const myTheatr = new Theatr("Grand Cinema", 10);
+console.log(myTheatr.availableSeats()); 
 
-myTheatre.bookSeat(3); 
-myTheatre.bookSeat(3);
+myTheatr.bookSeat(3); 
+myTheatr.bookSeat(3);
 
-console.log(myTheatre.availableSeats()); 
+console.log(myTheatr.availableSeats()); 
 
-myTheatre.cancelSeat(3); 
-myTheatre.cancelSeat(3); 
+myTheatr.cancelSeat(3); 
+myTheatr.cancelSeat(3); 
 
-console.log(myTheatre.availableSeats()); 
+console.log(myTheatr.availableSeats()); 
