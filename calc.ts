@@ -1,5 +1,5 @@
 
-class calc{
+class calcu{
     add(a:number,b:number):number{
         return a+b;
     }
@@ -41,7 +41,7 @@ class calc{
 
 
 
-const cal = new calc();
+const calu = new calcu();
      
-console.log(cal.calculate('add',5,7));
-console.log(cal.calculate('mul',9,5));
+console.log(calu.calculate('add',5,7));
+console.log(calu.calculate('mul',9,5));
