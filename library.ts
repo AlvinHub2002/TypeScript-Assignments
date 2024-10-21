@@ -1,4 +1,3 @@
-// Author Class
 class Author {
     authorId: number;
     name: string;
@@ -27,7 +26,6 @@ class Book {
     }
 }
 
-// Member Class
 class Member {
     memberId: number;
     name: string;
@@ -63,7 +61,6 @@ class Member {
     }
 }
 
-// Library Class
 class Library {
     private books: Book[] = [];
     private authors: Author[] = [];
@@ -94,39 +91,29 @@ class Library {
     }
 }
 
-// Sample Usage
 const library = new Library();
 
-// Creating authors
 const author1 = new Author(1, "J.K. Rowling", "British author, best known for the Harry Potter series.");
 const author2 = new Author(2, "J.R.R. Tolkien", "English writer, best known for The Hobbit and The Lord of the Rings.");
 
-// Adding authors to the library
 library.addAuthor(author1);
 library.addAuthor(author2);
 
-// Creating books
 const book1 = new Book(1, "Harry Potter and the Sorcerer's Stone", author1, "Fantasy");
 const book2 = new Book(2, "The Hobbit", author2, "Fantasy");
 
-// Adding books to the library
 library.addBook(book1);
 library.addBook(book2);
 
-// Creating members
 const member1 = new Member(1, "Alice", "alice@example.com");
 const member2 = new Member(2, "Bob", "bob@example.com");
 
-// Adding members to the library
 library.addMember(member1);
 library.addMember(member2);
 
-// Member borrows a book
 console.log(member1.borrowBook(book1)); 
 console.log(member1.borrowBook(book1)); 
 
-// Member returns a book
 console.log(member1.returnBook(book1)); 
 
-// Display available books
 console.log(library.getAvailableBooks().map(book => book.title)); 
